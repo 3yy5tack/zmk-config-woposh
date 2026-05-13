@@ -264,6 +264,18 @@
             bindings = <&to 6>;
             key-positions = <1 0 6 7 2 8>;
         };
+
+        combo_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <2 1>;
+            layers = <2>;
+        };
+
+        combo_dot {
+            bindings = <&kp PERIOD>;
+            key-positions = <7 8>;
+            layers = <2>;
+        };
     };
 
     keymap {
@@ -271,25 +283,25 @@
 
         base {
             bindings = <
-&kp A  &kp N  &kp I  &kp I  &kp N  &kp A  &kp O  &kp T  &kp E  &kp E  &kp T  &kp O  &lt 1 SPACE  &kp BSPC  &kp BSPC  &kp SPACE
+&kp A  &kp N  &kp I  &kp I  &kp N  &kp A  &kp O  &kp T  &kp E  &kp E  &kp T  &kp O  &lt 1 SPACE  &lt 2 BACKSPACE  &kp BSPC  &kp SPACE
             >;
         };
 
         lower {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp LS(A)  &kp LS(N)  &kp LS(I)  &none  &none  &none  &kp LS(O)  &kp LS(T)  &kp LS(E)  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         raise {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp ESCAPE  &kp UP_ARROW  &kp ENTER  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         both {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp DELETE  &kp PAGE_UP  &kp TAB  &none  &none  &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
@@ -309,6 +321,15 @@
             bindings = <
 &bt BT_CLR  &studio_unlock  &to 0  &none  &none  &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        both_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
