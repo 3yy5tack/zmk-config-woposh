@@ -1,0 +1,76 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#define BASE   0
+#define LOWER  1
+#define RAISE  2
+#define BOTH   3
+#define ADJ    4
+#define EX     5
+#define DET    6
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        base {
+            bindings = <
+                &kp A &kp N &kp I           &kp I &kp N &kp A
+                &kp O &kp T &kp E           &kp E &kp T &kp O
+                      &kp SPC &kp BSPC      &kp BSPC  &kp SPC
+            >;
+        };
+
+        lower {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        };
+
+        raise {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        }
+        
+        both {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        }
+        
+        adj {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        }
+        
+        ex {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        }
+
+        det {
+            bindings = <
+                &none &none &none           &none &none &none
+                &none &none &none           &none &none &none
+                      &none &none      &none  &none
+            >;
+        }
+    };
+};

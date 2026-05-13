@@ -1,0 +1,36 @@
+// See https://zmk.dev/docs/development/hardware-integration/physical-layouts
+// for how to configure this.
+
+#include <physical_layouts.dtsi>
+
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan>;
+
+        // Edit this to define the positions and sizes of the keys, or remove it
+        // if your keyboard will not support ZMK Studio.
+        // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   25       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100  200   25       0     0     0>
+            , <&key_physical_attrs 100 100  700   25       0     0     0>
+            , <&key_physical_attrs 100 100  800    0       0     0     0>
+            , <&key_physical_attrs 100 100  900   25       0     0     0>
+            , <&key_physical_attrs 100 100    0  125       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            , <&key_physical_attrs 100 100  200  125       0     0     0>
+            , <&key_physical_attrs 100 100  700  125       0     0     0>
+            , <&key_physical_attrs 100 100  800  100       0     0     0>
+            , <&key_physical_attrs 100 100  900  125       0     0     0>
+            , <&key_physical_attrs 100 100  300  275       0     0     0>
+            , <&key_physical_attrs 100 100  400  275       0     0     0>
+            , <&key_physical_attrs 100 100  500  275       0     0     0>
+            , <&key_physical_attrs 100 100  600  275       0     0     0>
+            ;
+    };
+};
+

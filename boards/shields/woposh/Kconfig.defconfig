@@ -1,0 +1,16 @@
+if SHIELD_WOPOSH_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "woposh"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_WOPOSH_LEFT
+
+if SHIELD_WOPOSH_LEFT || SHIELD_WOPOSH_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_WOPOSH_LEFT || SHIELD_WOPOSH_RIGHT
