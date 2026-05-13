@@ -39,31 +39,31 @@
                 &none &none &none           &none &none &none
                       &none &none      &none  &none
             >;
-        }
-        
+        };
+
         both {
             bindings = <
                 &none &none &none           &none &none &none
                 &none &none &none           &none &none &none
                       &none &none      &none  &none
             >;
-        }
-        
+        };
+
         adj {
             bindings = <
                 &none &none &none           &none &none &none
                 &none &none &none           &none &none &none
                       &none &none      &none  &none
             >;
-        }
-        
+        };
+
         ex {
             bindings = <
                 &none &none &none           &none &none &none
                 &none &none &none           &none &none &none
                       &none &none      &none  &none
             >;
-        }
+        };
 
         det {
             bindings = <
@@ -71,6 +71,6 @@
                 &none &none &none           &none &none &none
                       &none &none      &none  &none
             >;
-        }
+        };
     };
 };
