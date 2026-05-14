@@ -14,324 +14,387 @@
 #define DET    6
 
 quick-tap-ms {
-    = <150>;};
+    = <
+
+    150 = >;
+};
 
 /
 
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+// Define a default keymap here.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
 
-    combos {
-        compatible = "zmk,combos";
+combos {
+    compatible = "zmk,combos";
 
-        combo_s {
-            bindings = <&kp S>;
-            key-positions = <2 1>;
-            layers = <0>;
-        };
-
-        combo_ss {
-            bindings = <&kp LS(S)>;
-            key-positions = <2 1>;
-            layers = <1>;
-        };
-
-        combo_h {
-            bindings = <&kp H>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        combo_hh {
-            bindings = <&kp LS(H)>;
-            key-positions = <7 8>;
-            layers = <1>;
-        };
-
-        combo_r {
-            bindings = <&kp R>;
-            key-positions = <1 8>;
-            layers = <0>;
-        };
-
-        combo_rr {
-            bindings = <&kp LS(R)>;
-            key-positions = <8 1>;
-            layers = <1>;
-        };
-
-        combo_d {
-            bindings = <&kp D>;
-            key-positions = <0 1>;
-            layers = <0>;
-        };
-
-        combo_dd {
-            bindings = <&kp LS(D)>;
-            key-positions = <0 1>;
-            layers = <1>;
-        };
-
-        combo_l {
-            bindings = <&kp L>;
-            key-positions = <2 7>;
-            layers = <0>;
-        };
-
-        combo_ll {
-            bindings = <&kp LS(L)>;
-            key-positions = <2 7>;
-            layers = <1>;
-        };
-
-        combo_c {
-            bindings = <&kp C>;
-            key-positions = <6 8>;
-            layers = <0>;
-        };
-
-        combo_cc {
-            bindings = <&kp LS(C)>;
-            key-positions = <6 8>;
-            layers = <1>;
-        };
-
-        combo_u {
-            bindings = <&kp U>;
-            key-positions = <7 6>;
-            layers = <0>;
-        };
-
-        combo_uu {
-            bindings = <&kp LS(U)>;
-            key-positions = <7 6>;
-            layers = <1>;
-        };
-
-        combo_m {
-            bindings = <&kp M>;
-            key-positions = <0 8>;
-            layers = <0>;
-        };
-
-        combo_mm {
-            bindings = <&kp LS(M)>;
-            key-positions = <0 8>;
-        };
-
-        combo_w {
-            bindings = <&kp W>;
-            key-positions = <2 6>;
-            layers = <0>;
-        };
-
-        combo_ww {
-            bindings = <&kp LS(W)>;
-            key-positions = <2 6>;
-            layers = <1>;
-        };
-
-        combo_f {
-            bindings = <&kp F>;
-            key-positions = <0 2>;
-            layers = <0>;
-        };
-
-        combo_ff {
-            bindings = <&kp LS(F)>;
-            key-positions = <0 2>;
-            layers = <1>;
-        };
-
-        combo_g {
-            bindings = <&kp G>;
-            key-positions = <1 6>;
-            layers = <0>;
-        };
-
-        combo_gg {
-            bindings = <&kp LS(G)>;
-            key-positions = <1 6>;
-            layers = <1>;
-        };
-
-        combo_y {
-            bindings = <&kp Y>;
-            key-positions = <1 2 6>;
-            layers = <0>;
-        };
-
-        combo_yy {
-            bindings = <&kp LS(Y)>;
-            key-positions = <1 2 6>;
-            layers = <1>;
-        };
-
-        combo_p {
-            bindings = <&kp P>;
-            key-positions = <0 1 2>;
-            layers = <0>;
-        };
-
-        combo_pp {
-            bindings = <&kp LS(P)>;
-            key-positions = <2 1 0>;
-            layers = <1>;
-        };
-
-        combo_b {
-            bindings = <&kp B>;
-            key-positions = <6 7 8>;
-            layers = <0>;
-        };
-
-        combo_bb {
-            bindings = <&kp LS(B)>;
-            key-positions = <6 7 8>;
-            layers = <1>;
-        };
-
-        combo_v {
-            bindings = <&kp V>;
-            key-positions = <1 6 8>;
-            layers = <0>;
-        };
-
-        combo_vv {
-            bindings = <&kp LS(V)>;
-            key-positions = <6 1 8>;
-            layers = <1>;
-        };
-
-        combo_k {
-            bindings = <&kp K>;
-            key-positions = <1 0 8>;
-            layers = <0>;
-        };
-
-        combo_kk {
-            bindings = <&kp LS(K)>;
-            key-positions = <0 1 8>;
-            layers = <1>;
-        };
-
-        combo_j {
-            bindings = <&kp J>;
-            key-positions = <2 7 6>;
-            layers = <0>;
-        };
-
-        combo_jj {
-            bindings = <&kp LS(J)>;
-            key-positions = <2 7 6>;
-            layers = <1>;
-        };
-
-        combo_x {
-            bindings = <&kp X>;
-            key-positions = <0 7 8>;
-            layers = <0>;
-        };
-
-        combo_xx {
-            bindings = <&kp LS(X)>;
-            key-positions = <0 7 8>;
-            layers = <1>;
-        };
-
-        combo_q {
-            bindings = <&kp Q>;
-            key-positions = <0 6 8>;
-            layers = <0>;
-        };
-
-        combo_qq {
-            bindings = <&kp LS(Q)>;
-            key-positions = <0 6 8>;
-        };
-
-        combo_z {
-            bindings = <&kp Z>;
-            key-positions = <1 7 8>;
-            layers = <0>;
-        };
-
-        combo_zz {
-            bindings = <&kp LS(Z)>;
-            key-positions = <1 8 7>;
-            layers = <1>;
-        };
-
-        tobt {
-            bindings = <&to 6>;
-            key-positions = <1 0 6 7 2 8>;
-        };
-
-        combo_comma {
-            bindings = <&kp COMMA>;
-            key-positions = <2 1>;
-            layers = <2>;
-        };
-
-        combo_dot {
-            bindings = <&kp PERIOD>;
-            key-positions = <7 8>;
-            layers = <2>;
-        };
+    combo_s {
+        bindings = <&kp S>;
+        key-positions = <2 1>;
+        layers = <0>;
     };
 
-    keymap {
-        compatible = "zmk,keymap";
+    combo_ss {
+        bindings = <&kp LS(S)>;
+        key-positions = <2 1>;
+        layers = <1>;
+    };
 
-        base {
-            bindings = <
+    combo_h {
+        bindings = <&kp H>;
+        key-positions = <7 8>;
+        layers = <0>;
+    };
+
+    combo_hh {
+        bindings = <&kp LS(H)>;
+        key-positions = <7 8>;
+        layers = <1>;
+    };
+
+    combo_r {
+        bindings = <&kp R>;
+        key-positions = <1 8>;
+        layers = <0>;
+    };
+
+    combo_rr {
+        bindings = <&kp LS(R)>;
+        key-positions = <8 1>;
+        layers = <1>;
+    };
+
+    combo_d {
+        bindings = <&kp D>;
+        key-positions = <0 1>;
+        layers = <0>;
+    };
+
+    combo_dd {
+        bindings = <&kp LS(D)>;
+        key-positions = <0 1>;
+        layers = <1>;
+    };
+
+    combo_l {
+        bindings = <&kp L>;
+        key-positions = <2 7>;
+        layers = <0>;
+    };
+
+    combo_ll {
+        bindings = <&kp LS(L)>;
+        key-positions = <2 7>;
+        layers = <1>;
+    };
+
+    combo_c {
+        bindings = <&kp C>;
+        key-positions = <6 8>;
+        layers = <0>;
+    };
+
+    combo_cc {
+        bindings = <&kp LS(C)>;
+        key-positions = <6 8>;
+        layers = <1>;
+    };
+
+    combo_u {
+        bindings = <&kp U>;
+        key-positions = <7 6>;
+        layers = <0>;
+    };
+
+    combo_uu {
+        bindings = <&kp LS(U)>;
+        key-positions = <7 6>;
+        layers = <1>;
+    };
+
+    combo_m {
+        bindings = <&kp M>;
+        key-positions = <0 8>;
+        layers = <0>;
+    };
+
+    combo_mm {
+        bindings = <&kp LS(M)>;
+        key-positions = <0 8>;
+    };
+
+    combo_w {
+        bindings = <&kp W>;
+        key-positions = <2 6>;
+        layers = <0>;
+    };
+
+    combo_ww {
+        bindings = <&kp LS(W)>;
+        key-positions = <2 6>;
+        layers = <1>;
+    };
+
+    combo_f {
+        bindings = <&kp F>;
+        key-positions = <0 2>;
+        layers = <0>;
+    };
+
+    combo_ff {
+        bindings = <&kp LS(F)>;
+        key-positions = <0 2>;
+        layers = <1>;
+    };
+
+    combo_g {
+        bindings = <&kp G>;
+        key-positions = <1 6>;
+        layers = <0>;
+    };
+
+    combo_gg {
+        bindings = <&kp LS(G)>;
+        key-positions = <1 6>;
+        layers = <1>;
+    };
+
+    combo_y {
+        bindings = <&kp Y>;
+        key-positions = <1 2 6>;
+        layers = <0>;
+    };
+
+    combo_yy {
+        bindings = <&kp LS(Y)>;
+        key-positions = <1 2 6>;
+        layers = <1>;
+    };
+
+    combo_p {
+        bindings = <&kp P>;
+        key-positions = <0 1 2>;
+        layers = <0>;
+    };
+
+    combo_pp {
+        bindings = <&kp LS(P)>;
+        key-positions = <2 1 0>;
+        layers = <1>;
+    };
+
+    combo_b {
+        bindings = <&kp B>;
+        key-positions = <6 7 8>;
+        layers = <0>;
+    };
+
+    combo_bb {
+        bindings = <&kp LS(B)>;
+        key-positions = <6 7 8>;
+        layers = <1>;
+    };
+
+    combo_v {
+        bindings = <&kp V>;
+        key-positions = <1 6 8>;
+        layers = <0>;
+    };
+
+    combo_vv {
+        bindings = <&kp LS(V)>;
+        key-positions = <6 1 8>;
+        layers = <1>;
+    };
+
+    combo_k {
+        bindings = <&kp K>;
+        key-positions = <1 0 8>;
+        layers = <0>;
+    };
+
+    combo_kk {
+        bindings = <&kp LS(K)>;
+        key-positions = <0 1 8>;
+        layers = <1>;
+    };
+
+    combo_j {
+        bindings = <&kp J>;
+        key-positions = <2 7 6>;
+        layers = <0>;
+    };
+
+    combo_jj {
+        bindings = <&kp LS(J)>;
+        key-positions = <2 7 6>;
+        layers = <1>;
+    };
+
+    combo_x {
+        bindings = <&kp X>;
+        key-positions = <0 7 8>;
+        layers = <0>;
+    };
+
+    combo_xx {
+        bindings = <&kp LS(X)>;
+        key-positions = <0 7 8>;
+        layers = <1>;
+    };
+
+    combo_q {
+        bindings = <&kp Q>;
+        key-positions = <0 6 8>;
+        layers = <0>;
+    };
+
+    combo_qq {
+        bindings = <&kp LS(Q)>;
+        key-positions = <0 6 8>;
+    };
+
+    combo_z {
+        bindings = <&kp Z>;
+        key-positions = <1 7 8>;
+        layers = <0>;
+    };
+
+    combo_zz {
+        bindings = <&kp LS(Z)>;
+        key-positions = <1 8 7>;
+        layers = <1>;
+    };
+
+    tobt {
+        bindings = <&to 6>;
+        key-positions = <1 0 6 7 2 8>;
+    };
+
+    combo_comma {
+        bindings = <&kp COMMA>;
+        key-positions = <2 1>;
+        layers = <2>;
+    };
+
+    combo_dot {
+        bindings = <&kp PERIOD>;
+        key-positions = <7 8>;
+        layers = <2>;
+    };
+
+    combo_0 {
+        bindings = <&kp N0>;
+        key-positions = <1 8>;
+        layers = <2>;
+    };
+
+    combo_1 {
+        bindings = <&kp NUMBER_1>;
+        key-positions = <1 0>;
+        layers = <2>;
+    };
+
+    combo_2 {
+        bindings = <&kp NUMBER_2>;
+        key-positions = <2 7>;
+        layers = <2>;
+    };
+
+    combo_3 {
+        bindings = <&kp NUMBER_3>;
+        key-positions = <6 8>;
+        layers = <2>;
+    };
+
+    combo_4 {
+        bindings = <&kp NUMBER_4>;
+        key-positions = <7 6>;
+        layers = <2>;
+    };
+
+    combo_5 {
+        bindings = <&kp N5>;
+        key-positions = <0 8>;
+        layers = <2>;
+    };
+
+    combo_6 {
+        bindings = <&kp NUMBER_6>;
+        key-positions = <2 6>;
+    };
+
+    combo_7 {
+        bindings = <&kp N7>;
+        key-positions = <0 2>;
+        layers = <2>;
+    };
+
+    combo_8 {
+        bindings = <&kp N8>;
+        key-positions = <1 6>;
+        layers = <2>;
+    };
+
+    combo_9 {
+        bindings = <&kp N9>;
+        key-positions = <1 2 6>;
+        layers = <2>;
+    };
+};
+
+keymap {
+    compatible = "zmk,keymap";
+
+    base {
+        bindings = <
 &kp A  &kp N  &kp I  &kp I  &kp N  &kp A  &kp O  &kp T  &kp E  &kp E  &kp T  &kp O  &lt 1 SPACE  &lt 2 BACKSPACE  &kp BSPC  &kp SPACE
-            >;
-        };
+        >;
+    };
 
-        lower {
-            bindings = <
+    lower {
+        bindings = <
 &kp LS(A)  &kp LS(N)  &kp LS(I)  &none  &none  &none  &kp LS(O)  &kp LS(T)  &kp LS(E)  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
+    };
 
-        raise {
-            bindings = <
+    raise {
+        bindings = <
 &kp ESCAPE  &kp UP_ARROW  &kp ENTER  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
+    };
 
-        both {
-            bindings = <
+    both {
+        bindings = <
 &kp DELETE  &kp PAGE_UP  &kp TAB  &none  &none  &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
+    };
 
-        adj {
-            bindings = <
+    adj {
+        bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
+    };
 
-        ex {
-            bindings = <
+    ex {
+        bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
+    };
 
-        det {
-            bindings = <
+    det {
+        bindings = <
 &bt BT_CLR  &studio_unlock  &to 0  &none  &none  &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none
-            >;
-        };
+        >;
     };
+};
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+conditional_layers {
+    compatible = "zmk,conditional-layers";
 
-        both_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
+    both_layer {
+        if-layers = <1 2>;
+        then-layer = <3>;
     };
+};
+
 };
