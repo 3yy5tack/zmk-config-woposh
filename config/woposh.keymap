@@ -333,6 +333,13 @@
             key-positions = <1 2 6>;
             layers = <2>;
         };
+
+        combo_both {
+            bindings = <&mo 3>;
+            key-positions = <12 13>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
     };
 
     behaviors {
@@ -394,12 +401,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        both_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
