@@ -13,13 +13,6 @@
 #define EX     5
 #define DET    6
 
-
-quick-tap-ms {
-    = <
-
-    150 = >;
-};
-
 / {
 
 // Define a default keymap here.
