@@ -314,6 +314,7 @@
         combo_6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <2 6>;
+            layers = <2>;
         };
 
         combo_7 {
