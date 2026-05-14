@@ -13,16 +13,18 @@
 #define EX     5
 #define DET    6
 
+
+
+/ {
+
+// Define a default keymap here.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+
 quick-tap-ms {
     = <
 
     150 = >;
 };
-
-/
-
-// Define a default keymap here.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
 
 combos {
     compatible = "zmk,combos";
@@ -395,4 +397,5 @@ conditional_layers {
         if-layers = <1 2>;
         then-layer = <3>;
     };
+};
 };
