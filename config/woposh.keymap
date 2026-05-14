@@ -396,5 +396,3 @@ conditional_layers {
         then-layer = <3>;
     };
 };
-
-};
