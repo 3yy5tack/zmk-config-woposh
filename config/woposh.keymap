@@ -403,13 +403,13 @@
 
         base {
             bindings = <
-&kp I  &kp O  &kp N  &kp N  &kp O  &kp I  &kp E  &kp R  &kp A  &kp A  &kp R  &kp E  &kp T  &kp BSPC  &hl 1 SPACE  &kp SPACE  &kp BSPC  &kp T
+&kp I  &kp O  &kp N  &kp N  &kp O  &kp I  &kp T  &kp E  &kp R  &kp A  &kp A  &kp R  &kp E  &kp T  &kp BSPC  &kp SPACE  &kp SPACE  &kp BSPC
             >;
         };
 
         lower {
             bindings = <
-&kp LS(A)  &kp LS(N)  &kp LS(I)  &none  &none  &none  &kp LS(O)  &kp LS(T)  &kp LS(E)  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp LS(I)  &kp LS(O)  &kp LS(N)  &none  &none  &none  &kp LS(T)  &kp LS(E)  &kp LS(R)  &kp LS(A)  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
