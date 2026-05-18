@@ -361,43 +361,43 @@
 
         base {
             bindings = <
-&kp A  &kp N  &kp I  &kp I  &kp N  &kp A  &kp O  &kp T  &kp E  &kp E  &kp T  &kp O  &hl 1 SPACE  &hl 2 BACKSPACE  &kp BSPC  &kp SPACE &none &none
+&kp I  &kp O  &kp N  &kp N  &kp O  &kp I  &kp E  &kp R  &kp A  &kp A  &kp R  &kp E  &kp T  &kp BSPC  &hl 1 SPACE  &kp SPACE  &kp BSPC  &kp T
             >;
         };
 
         lower {
             bindings = <
-&kp LS(A)  &kp LS(N)  &kp LS(I)  &none  &none  &none  &kp LS(O)  &kp LS(T)  &kp LS(E)  &none  &none  &none  &none  &none  &none  &none &none &none
+&kp LS(A)  &kp LS(N)  &kp LS(I)  &none  &none  &none  &kp LS(O)  &kp LS(T)  &kp LS(E)  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         raise {
             bindings = <
-&kp ESCAPE  &kp UP_ARROW  &kp ENTER  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none  &none  &none  &none  &none &none &none
+&kp ESCAPE  &kp UP_ARROW  &kp ENTER  &none  &none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         both {
             bindings = <
-&kp DELETE  &kp PAGE_UP  &kp TAB  &none  &none  &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &none  &none  &none  &none  &none  &none &none &none
+&kp DELETE  &kp PAGE_UP  &kp TAB  &none  &none  &none  &kp HOME  &kp PAGE_DOWN  &kp END  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         adj {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none &none &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         ex {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none &none &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
         det {
             bindings = <
-&bt BT_CLR  &studio_unlock  &to 0  &none  &none  &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none &none &none
+&bt BT_CLR  &studio_unlock  &to 0  &none  &none  &none  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
     };
