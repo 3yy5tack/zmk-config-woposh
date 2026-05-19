@@ -176,14 +176,14 @@
 
         combo_p {
             bindings = <&kp P>;
-            key-positions = <0 1 9>;
+            key-positions = <9 6>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_pp {
             bindings = <&kp LS(P)>;
-            key-positions = <1 0 9>;
+            key-positions = <6 9>;
             layers = <1>;
             timeout-ms = <30>;
         };
@@ -204,14 +204,14 @@
 
         combo_v {
             bindings = <&kp V>;
-            key-positions = <6 9>;
+            key-positions = <2 8>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_vv {
             bindings = <&kp LS(V)>;
-            key-positions = <6 9>;
+            key-positions = <2 8>;
             layers = <1>;
             timeout-ms = <30>;
         };
