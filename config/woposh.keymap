@@ -176,28 +176,28 @@
 
         combo_p {
             bindings = <&kp P>;
-            key-positions = <9 6>;
+            key-positions = <2 6>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_pp {
             bindings = <&kp LS(P)>;
-            key-positions = <6 9>;
+            key-positions = <6 2>;
             layers = <1>;
             timeout-ms = <30>;
         };
 
         combo_b {
             bindings = <&kp B>;
-            key-positions = <6 2>;
+            key-positions = <6 9>;
             layers = <0>;
             timeout-ms = <30>;
         };
 
         combo_bb {
             bindings = <&kp LS(B)>;
-            key-positions = <6 2>;
+            key-positions = <6 9>;
             layers = <1>;
             timeout-ms = <30>;
         };
