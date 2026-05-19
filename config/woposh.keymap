@@ -334,41 +334,41 @@
 
         base {
             bindings = <
-&kp I  &kp O  &hl 5 N  &kp N  &kp O  &kp I  &hl 2 T  &hl 3 E  &kp R  &hl 4 A  &kp A  &kp R  &kp E  &kp T  &kp BSPC  &hl 1 SPACE  &kp SPACE  &kp BSPC
+&kp I  &kp O  &hl 5 N  &kp N  &kp O  &kp I  &hl 2 T  &hl 3 E  &kp R  &hl 4 A  &kp A  &kp R  &kp E  &kp T  &none  &hl 1 SPACE  &kp SPACE  &kp BSPC
             >;
         };
 
-        lower {
+        nav {
             bindings = <
 &kp ESCAPE  &kp UP_ARROW  &kp BACKSPACE  &none  &none  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
-        raise {
+        sym1 {
             bindings = <
 &kp LEFT_PARENTHESIS  &kp LBKT  &kp LEFT_BRACE  &none  &none  &none  &none  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
-        both {
+        sym2 {
             bindings = <
 &kp UNDERSCORE  &kp PLUS  &kp MINUS  &none  &none  &none  &kp BACKSLASH  &none  &kp ASTERISK  &kp SLASH  &none  &none  &none  &none  &none  &kp EQUAL  &none  &none
             >;
         };
 
-        adj {
+        sym3 {
             bindings = <
-&kp AT_SIGN  &kp POUND  &none  &none  &none  &none  &kp DOLLAR  &kp PERCENT  &kp LCTRL  &none  &none  &none  &none  &none  &none  &kp AMPERSAND  &none  &none
+&kp AT_SIGN  &kp POUND  &none  &none  &none  &none  &kp DOLLAR  &kp PERCENT  &kp CARET  &none  &none  &none  &none  &none  &none  &kp AMPERSAND  &none  &none
             >;
         };
 
-        ex {
+        sym4 {
             bindings = <
 &kp COMMA  &kp DOT  &none  &none  &none  &none  &kp SQT  &kp EXCLAMATION  &kp QUESTION  &none  &none  &none  &none  &none  &none  &kp SEMICOLON  &none  &none
             >;
         };
 
-        det {
+        btcfg {
             bindings = <
 &bt BT_CLR  &studio_unlock  &none  &none  &none  &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none  &none  &none  &none  &none  &to 0  &none  &none
             >;
