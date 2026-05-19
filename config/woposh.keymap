@@ -334,7 +334,7 @@
 
         base {
             bindings = <
-&kp I  &kp O  &hl 5 N  &kp N  &kp O  &kp I  &hl 2 T  &hl 3 E  &kp R  &hl 4 A  &kp A  &kp R  &kp E  &kp T  &none  &hl 1 SPACE  &kp SPACE  &kp BSPC
+&kp I  &kp O  &hl 5 N  &kp N  &kp O  &kp I  &hl 2 A  &hl 3 E  &kp R  &hl 4 T  &kp A  &kp R  &kp E  &kp T  &none  &hl 1 SPACE  &kp SPACE  &kp BSPC
             >;
         };
 
